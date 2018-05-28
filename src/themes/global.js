@@ -1,0 +1,167 @@
+export default theme => ({
+  '@global': {
+    html: {
+      fontSize: '62.5%',
+    },
+    body: {
+      fontSize: '1.4rem',
+      fontFamily: 'lato',
+      fontWeight: 100,
+      letterSpacing: 1,
+    },
+    input: {
+      width: '100%',
+      padding: [16, 10],
+      margin: [10, 0],
+      boxSizing: 'border-box',
+      border: 'none',
+      '&:-webkit-autofill': {
+        backgroundColor: 'transparent',
+        boxShadow: `inset 0 0 0px 9999px ${theme.colors.white}`,
+        textFillColor: theme.colors.black.dark,
+      },
+    },
+    textarea: {
+      width: '100%',
+      height: 80,
+      padding: 10,
+      margin: [10, 0],
+      boxSizing: 'border-box',
+      border: 'none',
+      '&:-webkit-autofill': {
+        backgroundColor: 'transparent',
+        boxShadow: `inset 0 0 0px 9999px ${theme.colors.white}`,
+        textFillColor: theme.colors.black.dark,
+      },
+    },
+    p: {
+      fontSize: '1.5rem',
+      letterSpacing: 1,
+    },
+    '.fitasticButtonDefault': {
+      backgroundColor: theme.colors.yellow.light,
+      color: theme.colors.blue.light,
+      border: 'none',
+      padding: [15, 35],
+      letterSpacing: 1,
+      transition: 'all 0.5s ease',
+      '&:after': {
+        content: '\'\'',
+        background: theme.colors.white,
+        opacity: 0,
+        transform: 'translateX(-50%) translateY(-50%) rotate(-25deg)',
+      },
+      '&:hover': {
+        height: '120% !important',
+        opacity: 1,
+        boxShadow: `inset 0 0 0 3px ${theme.colors.black.dark}`,
+        color: theme.colors.black.dark,
+        backgroundColor: theme.colors.white,
+      },
+    },
+    '@font-face': [
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-black-webfont.woff2") format("woff2"), url("assets/fonts/lato-black-webfont.woff") format("woff")',
+        fontWeight: 700,
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-blackitalic-webfont.woff2") format("woff2"), url("assets/fonts/lato-blackitalic-webfont.woff") format("woff")',
+        fontWeight: 'normal',
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-bold-webfont.woff2") format("woff2"), url("assets/fonts/lato-bold-webfont.woff") format("woff")',
+        fontWeight: 600,
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-bolditalic-webfont.woff2") format("woff2"), url("assets/fonts/lato-bolditalic-webfont.woff") format("woff")',
+        fontWeight: 600,
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-italic-webfont.woff2") format("woff2"), url("assets/fonts/lato-italic-webfont.woff") format("woff")',
+        fontWeight: 200,
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato/lato-light-webfont.woff2") format("woff2"), url("assets/fonts/lato/lato-light-webfont.woff") format("woff")',
+        fontWeight: 100,
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-lightitalic-webfont.woff2") format("woff2"), url("assets/fonts/lato-lightitalic-webfont.woff") format("woff")',
+        fontWeight: 100,
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'lato',
+        src: 'url("assets/fonts/lato-regular-webfont.woff2") format("woff2"), url("assets/fonts/lato-regular-webfont.woff") format("woff")',
+        fontWeight: 'normal',
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'openSansCond',
+        src: 'url("assets/fonts/opensanscondensed-light-webfont.woff2") format("woff2"), url("assets/fonts/opensanscondensed-light-webfont.woff") format("woff")',
+        fontWeight: 100,
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'openSansCond',
+        src: 'url("assets/fonts/opensanscondensed-lightitalic-webfont.woff2") format("woff2"), url("assets/fonts/opensanscondensed-lightitalic-webfont.woff") format("woff")',
+        fontWeight: 100,
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'openSansCond',
+        src: 'url("assets/fonts/opensanscondensed-bold-webfont.woff2") format("woff2"), url("assets/fonts/opensanscondensed-bold-webfont.woff") format("woff")',
+        fontWeight: 600,
+        fontStyle: 'italic',
+      },
+      {
+        fontFamily: 'fitastic',
+        src: 'url("assets/fonts/icomoon.eot?mndjii") format("embedded-opentype"), url("assets/fonts/icomoon.ttf?mndjii") format("truetype"), url("assets/fonts/icomoon.woff?mndjii") format("woff"), url("assets/fonts/icomoon.svg?mndjii#icomoon") format("svg")',
+        fontWeight: 'normal',
+        fontStyle: 'normal',
+      },
+      {
+        fontFamily: 'fitastic',
+        src: 'url("assets/fonts/icomoon.eot?mndjii") format("embedded-opentype"), url("assets/fonts/icomoon.ttf?mndjii") format("truetype"), url("assets/fonts/icomoon.woff?mndjii") format("woff"), url("assets/fonts/icomoon.svg?mndjii#icomoon") format("svg")',
+        fontWeight: 'normal',
+        fontStyle: 'normal',
+      },
+    ],
+    '[class^="icon-"], [class*=" icon-"]': {
+      fontFamily: 'fitastic !important',
+      speak: 'none',
+      fontStyle: 'normal',
+      fontWeight: 'normal',
+      fontVariant: 'normal',
+      textTransform: 'none',
+      lineHeight: 1,
+      display: 'inline-block',
+      '-webkit-font-smoothing': 'antialiased',
+      '-moz-osx-font-smoothing': 'grayscale',
+    },
+    '.icon-logo_font:before': {
+      content: '"\\e903"',
+    },
+    '.icon-logo_name:before': {
+      content: '"\\e900"',
+    },
+    '.icon-key:before': {
+      content: '"\\e901"',
+    },
+    '.icon-user:before': {
+      content: '"\\e902"',
+    },
+  },
+});

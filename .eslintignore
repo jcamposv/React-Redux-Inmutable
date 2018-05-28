@@ -1,0 +1,4 @@
+/node_modules/**
+registerServiceWorker.js
+App.test.js
+/src/config/**
